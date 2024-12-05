@@ -1,0 +1,70 @@
+# WordPress Core
+/wp-admin/
+/wp-includes/
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/backups/
+/wp-content/upgrade/
+
+# WordPress Config
+wp-config.php
+
+# Cache
+*.log
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Thumbnails / image cache
+/thumbs/
+
+# WordPress debug files
+/debug.log
+
+# Environment specific
+/.env
+/.env.local
+/.env.*.local
+
+# Database dumps
+*.sql
+
+# Composer
+/vendor/
+
+# Node.js
+/node_modules/
+
+# npm log files
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# WordPress temporary files
+wp-content/themes/twentytwenty*/style.css*
+
+# Ignore composer & npm lock files (if you don't want to version them)
+# composer.lock
+# package-lock.json
+# yarn.lock
+
+# Ignore other unnecessary files
+/.sass-cache/
+/bower_components/
+
+# Ignore WP-CLI cache
+/wp-cli/
+
+# Ignore build files for production
+/dist/
+/build/

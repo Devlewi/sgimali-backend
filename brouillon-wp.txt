@@ -1,0 +1,31 @@
+Les visiteurs qui accèdent au site seront soit redirigés, soit bloqués (selon la configuration choisie).
+Le backoffice reste accessible pour les administrateurs.
+L'API REST de WordPress fonctionne normalement pour consommer les données.
+
+
+> Tous les articles
+http://localhost/sgi/backend/wp-json/wp/v2/posts
+
+
+> Limiter le nombre d'articles :
+http://localhost/sgi/backend/wp-json/wp/v2/posts?per_page=5
+
+
+> Articles d'une catégorie spécifique (en utilisant l'ID de la catégorie) :
+http://localhost/sgi/backend/wp-json/wp/v2/posts?categories=1
+
+> Accéder à un article spécifique
+http://localhost/sgi/backend/wp-json/wp/v2/posts/123
+
+
+
+
+
+JWT Authentication for WP REST API
+
+
+
+Pour masquer l'adresse de votre serveur backend et sécuriser vos API, vous avez plusieurs options :
+> Utiliser un proxy inverse via Nginx ou Apache.
+> Créer un plugin WordPress qui masque le préfixe de l'API.
+> Utiliser des techniques d'authentification comme JWT pour restreindre l'accès à l'API.
